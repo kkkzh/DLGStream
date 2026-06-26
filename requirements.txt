@@ -1,0 +1,14 @@
+matplotlib
+argparse
+lpips
+plyfile
+pytorch_msssim
+open3d
+imageio[ffmpeg]
+einops
+hydra-core
+dataclasses
+imagecodecs[all]
+omegaconf
+mmengine-lite
+ffmpeg-python

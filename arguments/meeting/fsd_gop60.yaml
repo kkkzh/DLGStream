@@ -1,0 +1,123 @@
+experiments:
+  - name: "jxl_quant"
+    attributes:
+      - name: "_xyz"
+        method: "jpeg-xl"
+        normalize: true
+        min: 0
+        max: 0
+        params:
+          level: 101
+      - name: "_features_dc"
+        method: "jpeg-xl"
+        normalize: true
+        min: 0
+        max: 0
+        params:
+          level: 100
+      - name: "_features_rest"
+        method: "jpeg-xl"
+        normalize: true
+        min: 0
+        max: 0
+#        quantize: 8
+        params:
+          level: 101
+      - name: "_scaling"
+        method: "jpeg-xl"
+        normalize: false
+        min: 0
+        max: 0
+        contract: false
+#        quantize: 7
+        params:
+          level: 101
+      - name: "_rotation"
+        method: "jpeg-xl"
+        normalize: true
+        min: 0
+        max: 0
+#        quantize: 7
+        params:
+          level: 101
+      - name: "_opacity"
+        method: "jpeg-xl"
+        normalize: true
+        min: 0
+        max: 0
+        contract: false
+        quantize: 6
+        params:
+          level: 101
+
+      - name: "_xyz_dynamic"
+        method: "jpeg-xl"
+        normalize: true
+        min: 0
+        max: 0
+        params:
+          level: 101
+      - name: "_features_dc_dynamic"
+        method: "jpeg-xl"
+        normalize: true
+        min: 0
+        max: 0
+        params:
+          level: 100
+      - name: "_features_rest_dynamic"
+        method: "jpeg-xl"
+        normalize: true
+        min: 0
+        max: 0
+        quantize: 6
+        params:
+          level: 101
+      - name: "_point_feats"
+        method: "png"
+        normalize: true
+        min: -1.0
+        max: 1.0
+        params:
+          dtype: "uint16"
+      - name: "_scaling_dynamic"
+        method: "jpeg-xl"
+        normalize: false
+        min: 0
+        max: 0
+        contract: false
+        quantize: 6
+        params:
+          level: 101
+      - name: "_rotation_dynamic"
+        method: "jpeg-xl"
+        normalize: true
+        min: 0
+        max: 0
+        quantize: 7
+        params:
+          level: 101
+      - name: "_opacity_dynamic"
+        method: "jpeg-xl"
+        normalize: true
+        min: 0
+        max: 0
+        contract: false
+        quantize: 6
+        params:
+          level: 101
+    dy_offset:
+      - name: "_xyz_dynamic_offset"
+        method: "jpeg-xl"
+        normalize: true
+        min: 0
+        max: 0
+        params:
+          level: 101
+    st_offset:
+      - name: "_xyz_offset"
+        method: "jpeg-xl"
+        normalize: true
+        min: 0
+        max: 0
+        params:
+          level: 101
